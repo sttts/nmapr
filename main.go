@@ -91,7 +91,7 @@ type Port struct {
 
 type Host struct {
 	StartTime string     `xml:"starttime,attr"`
-	Address   Address    `xml:"address"`
+	Address   []Address  `xml:"address"`
 	Hostnames []Hostname `xml:"hostnames>hostname"`
 	Ports     []Port     `xml:"ports>port"`
 	OS        []OS       `xml:"os"`
